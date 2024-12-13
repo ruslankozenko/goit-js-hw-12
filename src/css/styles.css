@@ -82,6 +82,26 @@ button:hover {
 .gallery-item {
   flex-basis: calc((100% - 72px) / 4);
   border: #808080 1px solid;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loader {
+  position: relative;
+  /* Змінено для розташування під кнопкою */
+  margin: 20px auto;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 72px) / 4);
+  border: #808080 1px solid;
 }
 
 img {

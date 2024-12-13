@@ -15,10 +15,25 @@ let queryTrimmed = "";
 const PER_PAGE = 15;
 let totalHits = 0;
 
+// function toggleLoaderAndButton(showButton = false, showLoader = false) {
+//     loadMoreBtn.hidden = !showButton;
+//     loaderEl.hidden = !showLoader;
+// }
+
 function toggleLoaderAndButton(showButton = false, showLoader = false) {
-    loadMoreBtn.hidden = !showButton;
-    loaderEl.hidden = !showLoader;
+    if (showButton) {
+        loadMoreBtn.classList.add("is-open");
+    } else {
+        loadMoreBtn.classList.remove("is-open");
+    }
+
+    if (showLoader) {
+        loaderEl.classList.add("is-open");
+    } else {
+        loaderEl.classList.remove("is-open");
+    }
 }
+
 
 function smoothScroll() {
     const { height: cardHeight } = galleryEl.firstElementChild.getBoundingClientRect();
