@@ -1,7 +1,7 @@
 'use strict';
 
-import { getImages } from "./pixabay-api";
-import { galleryEl, createMarkUp } from "./render-functions";
+import { getImages } from "./js/pixabay-api";
+import { galleryEl, createMarkUp } from "./js/render-function";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
