@@ -64,6 +64,8 @@ button:hover {
 }
 
 .load-btn.is-open {
+  max-width: 125px;
+  height: 40px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -71,7 +73,7 @@ button:hover {
 }
 
 .gallery {
-  max-width: 1440px;
+  max-width: 1128px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -80,7 +82,9 @@ button:hover {
 }
 
 .gallery-item {
-  flex-basis: calc((100% - 72px) / 4);
+  max-width: 360px;
+  height: 248px;
+  flex-basis: calc((100% - 48px) / 3);
   border: #808080 1px solid;
   border-radius: 8px;
   overflow: hidden;
@@ -95,14 +99,9 @@ button:hover {
 
 .loader {
   position: relative;
-  /* Змінено для розташування під кнопкою */
   margin: 20px auto;
 }
 
-.gallery-item {
-  flex-basis: calc((100% - 72px) / 4);
-  border: #808080 1px solid;
-}
 
 img {
   object-fit: cover;
