@@ -83,7 +83,6 @@ button:hover {
 
 .gallery-item {
   max-width: 360px;
-  height: 248px;
   flex-basis: calc((100% - 48px) / 3);
   border: #808080 1px solid;
   border-radius: 8px;
@@ -105,7 +104,6 @@ button:hover {
 
 img {
   object-fit: cover;
-  height: 200px;
 }
 
 .img-dscr {
